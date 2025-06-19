@@ -14,7 +14,7 @@ const db = new Dexie("Db1") as Dexie & {
 db.version(1).stores({
   agents: "++id, name",
   chats: "++id, title, lastOpenedAt",
-  messages: "++id, chatId",
+  messages: "++id, chatId, isStreaming",
 });
 
 export { db };

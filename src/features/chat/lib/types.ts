@@ -1,12 +1,12 @@
-import type { AssistantContent, UserContent } from "ai";
+type ModelType = {
+  provider: string;
+  name: string;
+};
 
 type AgentType = {
   id: string;
   name: string;
-  model: {
-    provider: string;
-    name: string;
-  };
+  model: ModelType;
   system: string;
   imageUrl?: string;
 };
@@ -18,21 +18,14 @@ type ChatType = {
   participantIds: Array<string>;
 };
 
-type UserMessageType = {
-  role: "user";
-  content: UserContent;
-};
-
-type AssistantMessageType = {
-  role: "assistant";
-  content: AssistantContent;
-  agentId: string;
-};
-
-type MessageType = (UserMessageType | AssistantMessageType) & {
+type MessageType = {
   id: string;
+  role: "user" | "assistant";
+  content: string;
+  isStreaming: boolean;
+  agentId?: string;
   chatId: string;
   recipientIds: Array<string>;
 };
 
-export type { AgentType, ChatType, MessageType };
+export type { AgentType, ChatType, MessageType, ModelType };
