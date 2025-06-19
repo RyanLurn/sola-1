@@ -8,6 +8,7 @@ type AgentType = {
     name: string;
   };
   system: string;
+  imageUrl?: string;
 };
 
 type ChatType = {

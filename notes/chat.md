@@ -15,6 +15,6 @@
   - [ ] Prompt input
   - [ ] Messages display
 - [ ] AI chat interaction
+  - [ ] New chat handling
   - [ ] Groq support
   - [ ] Streaming responses
-  - [ ] New chat title generation
