@@ -8,9 +8,9 @@
     - [x] Message
     - [x] Agent
   - [x] Database connection
-- [ ] Sidebar for chat management
-  - [ ] Chat listing
-  - [ ] New chat button
+- [x] Sidebar for chat management
+  - [x] Chat listing
+  - [x] New chat button
 - [ ] Chat interface
   - [ ] Prompt input
   - [ ] Messages display

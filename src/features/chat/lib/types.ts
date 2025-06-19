@@ -13,6 +13,7 @@ type AgentType = {
 type ChatType = {
   id: string;
   title: string;
+  lastOpenedAt: number;
   participantIds: Array<string>;
 };
 
